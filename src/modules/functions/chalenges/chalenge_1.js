@@ -9,19 +9,18 @@ console.log(soma(2)(4)(2));
 // criar uma função que receba 3 parametros e o ultimo seja uma funçao para reso
 //lver os dois primeiros 
 
-test = function(x) {
+function test(numero) {
    return {
-      function(y) {
+      function(numero2) {
          return {
             function(fn) {
-               return fn(x,y)
+               return fn(numero, numero2)
                
             }
          }
       }
    }
 }
-
 
 const r1 = n1 => n2 => fn => fn(n1, n2)
 
