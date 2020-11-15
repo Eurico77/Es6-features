@@ -23,7 +23,7 @@ executarQualquerCoisa(bomDia)
 
 const potencia2 = base1 => exp1 => Math.pow(base1, exp1)
 
-// 
+
 function potencia(base) {
    return function(exp) {
       return Math.pow(base, exp)
@@ -33,5 +33,6 @@ function potencia(base) {
 
 const result2 = potencia2(2)
 console.log(result2(8));
+
 const result = potencia(2)
 console.log(result(8));
