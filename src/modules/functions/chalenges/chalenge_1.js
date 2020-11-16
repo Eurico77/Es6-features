@@ -1,5 +1,9 @@
 // criar uma função que retorne 3 valores
 const soma = num => num2 => num3 => num + num2 + num3; 
+
+
+
+
 const multiplicar = num => num2 => num3 => num + num2 * num3; 
 const subtrair = num => num2 => num3 => num + num2 - num3; 
 
