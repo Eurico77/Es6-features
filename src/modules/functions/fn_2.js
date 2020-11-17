@@ -8,8 +8,9 @@ saudacao("eurico");
 
 
 // exemplo com map
+// ... transforma os parametros em array
 const somar = (...numeros) => {
-   console.log(` me diz se isso é um array valido ${Array.isArray(numeros)}`);
+   console.log(` me diz se isso é um array valido,  ${Array.isArray(numeros)}`);
   let total = 0;
   numeros.map((n) => {
     total += n;

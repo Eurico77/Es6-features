@@ -30,7 +30,6 @@ function potencia(base) {
    }
 }
 
-
 const result2 = potencia2(2)
 console.log(result2(8));
 
