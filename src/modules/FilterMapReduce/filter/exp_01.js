@@ -12,4 +12,9 @@ const carrinho = [
    { nome: 'Nutela', qtd: 4, preco: 23.12 },
    { nome: 'Impressora', qtd: 0, preco: 3333.3 },
  ];
+
+ const filtrarQtd = carrinho.filter(item => item.qtd > 10)
+ .map((nome => nome.nome))
  
+ console.log(filtrarQtd);
+
