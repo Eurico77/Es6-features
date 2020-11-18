@@ -11,7 +11,7 @@ console.log(result);
 
 const exp = ['eurico', 'ana', 'iris']
 
-const r = exp.map((el) => el.toLocaleUpperCase())
+const r = exp.map(el => el.toLocaleUpperCase())
 console.log(r);
 
 //parametros suportados no map
