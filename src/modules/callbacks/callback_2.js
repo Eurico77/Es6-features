@@ -9,7 +9,7 @@ function exibir(err, content) {
 
 fs.readFile(caminho, exibir)
 
-console.log('inicio sync');
-const result = fs.readFileSync(caminho)
-console.log(result.toString());
-console.log('fim sync');
+// console.log('inicio sync');
+// const result = fs.readFileSync(caminho)
+// console.log(result.toString());
+// console.log('fim sync');
