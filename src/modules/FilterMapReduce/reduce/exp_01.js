@@ -13,6 +13,6 @@ const carrinho = [
    { nome: 'Impressora', qtd: 0, preco: 3333.3 },
  ];
 
- const reduct = carrinho.reduce((acc, el )  =>  acc + el.preco * el.qtd, 0, )
+ const reduct = carrinho.reduce((acc, el )  =>  acc + el.preco * el.qtd, 0)
 
  console.log(reduct);
