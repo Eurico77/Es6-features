@@ -19,13 +19,3 @@ const calcularValor = carrinho.map(data => data.preco * data.qtd)
 console.log(pegarNome);
 console.log(calcularValor);
 
-// criacao de como map funciona
-
-Array.prototype.mymap = function(fn) {
-   const newArray = []
-   for (let i = 0; i < this.length; i++) {
-      const result = fn(this[i], i, this );
-      newArray.push(result)
-      
-   }
-}
