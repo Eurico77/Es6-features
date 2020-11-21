@@ -19,12 +19,11 @@ const carrinho = [
 
 const result = carrinho
    .filter(p => !p.fragil)
-   .map(p => p.preco * p.qtd)
+   .map(p => p.qtd * p.preco)
    .reduce((acc, el) => {
-      // console.log(acc);
-      // console.log(el);
       const newQtd = acc.qtd + 1
       const newTotal = acc.total + el
+      console.log(acc, el);
       return {
          qtd: newQtd,
          total: newTotal, 
@@ -34,5 +33,13 @@ const result = carrinho
    }, {qtd: 0, total: 0, media: 0})
 
 
+// const itensFrageis = carrinho
+//    .filter(item => item.fragil)     
+//    .map(item => item.qtde * item.preco)  
+//    const mediaDosTotais = itensFrageis
+//    .reduce((acc, el) => acc + el )  / itensFrageis.length
+  
 
 console.log(result);
+
+// console.log(mediaDosTotais);
