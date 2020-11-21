@@ -21,13 +21,18 @@ const result = carrinho
    .filter(p => !p.fragil)
    .map(p => p.preco * p.qtd)
    .reduce((acc, el) => {
+      // console.log(acc);
+      // console.log(el);
+      const newQtd = acc.qtd + 1
+      const newTotal = acc.total + el
       return {
-         qtd: acc.qtd + 1,
-         total: acc.total + el,
-         media: 0
+         qtd: newQtd,
+         total: newTotal, 
+         media: newTotal / newQtd
       }
 
    }, {qtd: 0, total: 0, media: 0})
+
 
 
 console.log(result);
